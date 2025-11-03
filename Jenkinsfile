@@ -33,7 +33,7 @@ pipeline {
                 git config user.email "jenkins@localhost"
                 git add -f  build
                 git commit -m "Automated build pushed by Jenkins" || echo "No changes to commit"
-                git push https://${GIT_CREDENTIALS_USR}:${GIT_CREDENTIALS_PSW}@github.com/muhammadhuzaifasarfraz/react-jenkins-demo.git HEAD:main
+                git push https://${GIT_CREDENTIALS_USR}:${GIT_CREDENTIALS_PSW}@github.com/muhammadhuzaifasarfraz/jenkins.git HEAD:main
                 '''
             }
         }
